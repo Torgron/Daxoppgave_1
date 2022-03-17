@@ -15,9 +15,9 @@
         let db=firebase.firestore();
         
 
-            let form = $(".form")[0];
-            let input = $(".input")[0];
-            let submit = $(".submit")[0];
+            let form = $("#form");
+            let input = $("#input");
+            let submit = $("#submit");
 
             //The form.addEventListener() method attaches an event handler to the form.
             //"() =>" is a shorter way to write a function syntax.
@@ -41,7 +41,7 @@
             function hentData(doc){
                 console.log(navnListe);
                 navnListe.push(doc.data().input);
-                $(".output").text(navnListe);
+                $("#output").text(navnListe);
                 console.log(navnListe);
 
                 /*
